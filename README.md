@@ -1,4 +1,4 @@
-## Angular 9 Material Table Sort, Pagination, Filter, Action Button Example
+## Angular 9 Material Table Sort, Pagination, Filter, Action Button, Resizable column Example
 
 ## Project Setup
 
