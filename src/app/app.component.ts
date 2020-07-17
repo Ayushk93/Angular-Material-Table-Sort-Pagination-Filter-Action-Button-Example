@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
   }
 
   onResizeEnd(event: ResizeEvent, columnName): void {
-		if (event.edges.right || event.edges.left) {
+		if (event.edges.right) {
 			const cssValue = event.rectangle.width + 'px';
 			const columnElts = document.getElementsByClassName('mat-column-' + columnName);
 			for (let i = 0; i < columnElts.length; i++) {
