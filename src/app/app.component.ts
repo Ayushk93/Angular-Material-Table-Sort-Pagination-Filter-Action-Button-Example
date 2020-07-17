@@ -3,6 +3,7 @@ import {MatTableDataSource} from '@angular/material/table';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {SelectionModel} from '@angular/cdk/collections';
+import {ResizeEvent} from 'angular-resizable-element';
 /**
  * @title Table with pagination
  */
@@ -41,6 +42,18 @@ export class AppComponent implements OnInit {
         this.selection.clear() :
         this.dataSource.data.forEach(row => this.selection.select(row));
   }
+
+  onResizeEnd(event: ResizeEvent, columnName): void {
+		if (event.edges.right || event.edges.left) {
+			const cssValue = event.rectangle.width + 'px';
+			const columnElts = document.getElementsByClassName('mat-column-' + columnName);
+			for (let i = 0; i < columnElts.length; i++) {
+				const currentEl = columnElts[i] as HTMLDivElement;
+				currentEl.style.width = cssValue;
+			}
+		}
+  }
+  
 }
 
 export interface PeriodicElement {

@@ -9,6 +9,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {ResizableModule} from 'angular-resizable-element';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import {MatInputModule} from '@angular/material/input';
     MatTableModule,
     MatCheckboxModule,
     MatPaginatorModule,
-    MatSortModule, MatFormFieldModule, MatInputModule
+    MatSortModule, MatFormFieldModule, MatInputModule, ResizableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

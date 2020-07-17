@@ -10,3 +10,15 @@ mat-form-field.mat-form-field {
 mat-paginator {
   margin-right: 700px;
 }
+
+.mat-cell {
+  padding-left: 12px;
+  padding-right: 12px;
+  border-left: 1px solid #eee;
+}
+
+.mat-header {
+  padding-left: 12px;
+  padding-right: 12px;
+  border-left: 1px solid #eee;
+}
